@@ -1,0 +1,23 @@
+{
+	"maxplayers": 100,
+	"name": "MLG_UA TOP",
+	"gamemode": "freeroam",
+	"stream-distance": 500.0,
+	"announce": true,
+	"csharp": "disabled",
+	"port": 22005,
+	"allow-cef-debugging": false,
+	"resources": [
+	  "freeroam"
+	],
+	"voice-chat": true,
+	"fastdl-host": "",
+	"database": {
+	  "host": "localhost",
+	  "user": "root",
+	  "password": "",
+	  "database": "ragemp_db"
+	},
+	"api_url": "http://localhost:3000"
+  }
+  
