@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/AnonymEx911/TestServer#readme",
   "dependencies": {
+    "add": "^2.0.6",
     "express": "^4.19.2",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "rage-mp": "^2.0.0"
   }
 }

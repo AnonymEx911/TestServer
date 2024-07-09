@@ -1,5 +1,3 @@
-const mp = require('rage-mp');
-
 mp.events.add('playerJoin', (player) => {
   player.outputChatBox('Welcome to the server!');
 });
