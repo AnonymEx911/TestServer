@@ -1,5 +1,6 @@
 mp.events.add('playerJoin', (player) => {
   player.outputChatBox('Welcome to the server!');
+  player.call('showAuthBrowser');
 });
 
 mp.events.add('playerQuit', (player, exitType, reason) => {
@@ -7,3 +8,4 @@ mp.events.add('playerQuit', (player, exitType, reason) => {
 });
 
 console.log('Server started...');
+

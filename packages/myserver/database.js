@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
+const path = require('path');
 
 const app = express();
 const port = 3000;
@@ -18,6 +19,7 @@ connection.connect((err) => {
 });
 
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, 'client_packages', 'browser', 'auth')));
 
 app.post('/register', (req, res) => {
     const { username, password } = req.body;
@@ -42,6 +44,10 @@ app.post('/login', (req, res) => {
             res.json({ message: 'Login failed.' });
         }
     });
+});
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client_packages', 'browser', 'auth', 'index.html'));
 });
 
 app.listen(port, () => {
