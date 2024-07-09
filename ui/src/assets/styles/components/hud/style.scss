@@ -1,0 +1,122 @@
+.hud {
+	background: transparent;
+	overflow: hidden;
+}
+
+.hud_help {
+	position: absolute;
+	top: 35%;
+	left: -1.5%;
+	width: 15%;
+	
+	&-list {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&-item {
+		display: flex;
+		align-items: center;
+		padding-right: 4%;
+		margin-bottom: 1.2%;
+	}
+
+	&-name {
+		text-align: center;
+		font-size: 0.9vw;
+		line-height: 1.8;
+		margin: 0;
+		margin-right: 0.8em;
+		font-family: 'HelveticaNeue';
+		font-weight: 300;
+		width: 1.5vw;
+		height: 1.5vw;
+		background: rgba($color: #000, $alpha: 0.8);
+		color: #fff;
+		border-radius: 12%;
+	}
+
+	&-desc {
+		margin: 0;
+		text-align: right;
+		white-space: nowrap;
+		font-family: 'HelveticaNeue';
+		font-size: 0.8vw;
+		font-weight: 300;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+	}
+}
+
+.hud_location {
+	position: absolute;
+	bottom: 2%;
+    left: 16%;
+	padding-left: 0.5%;
+	border-left: 0.10277492291880781vh solid rgb(255, 0, 30);
+
+	&-street {
+		margin: 0;
+		font-size: 1.1vw;
+		color: rgb(255, 0, 30);
+		text-shadow: 0.052083333333333336vw 0.052083333333333336vw 0.052083333333333336vw rgba(0, 0, 0, 0.8);
+	}
+
+	&-zone {
+		margin: 0;
+		font-family: 'HelveticaNeue';
+		font-size: 0.9vw;
+		font-weight: 300;
+		line-height: 1;
+		text-shadow: 0.052083333333333336vw 0.052083333333333336vw 0.052083333333333336vw rgba(0, 0, 0, 0.8);
+	}
+}
+
+.hud_online {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0.5vw;
+
+	img {
+		width: 9vw;
+		height: 2vw;
+		filter: drop-shadow(0vh 0.15625vw 0.3125vw rgba(0, 0, 0, 0.3));
+	}
+
+	&-container {
+		margin-top: 0vw;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		text-align: center;
+	}
+
+	&-count {
+		width: 4.1vw;
+		display: flex;
+		align-items: center;
+
+		span {
+			font-size: 1vw;
+			font-family: 'HelveticaNeue';
+			font-weight: 300;
+			text-align: right;
+			text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.2);
+		}
+
+		svg {
+			width: 1.4vw;
+			height: 1.4vw;
+			fill: rgb(255, 0, 30);
+		}
+	}
+
+	.player-id {
+		margin: 0;
+		width: 3.6vw;
+		font-size: 1vw;
+		opacity: 0.5;
+		text-align: right;
+	}
+}

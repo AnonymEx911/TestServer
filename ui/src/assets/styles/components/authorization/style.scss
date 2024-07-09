@@ -1,0 +1,216 @@
+.auth-main {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: auto;
+	height: auto;
+	min-width: 21.354vw;
+	max-width: 21.354vw;
+	animation: auth-main 1s ease-in forwards;
+
+	&_wrapper {
+		height: auto;
+		width: auto;
+	}
+
+	@keyframes auth-main {
+		0% {
+			top: -20%;
+			opacity: 0;
+		}
+		100% {
+			top: 50%;
+			opacity: 1;
+		}
+	}
+
+	.flex-row {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.header-title {
+		font-family: 'PFDinDisplayPro';
+		font-weight: 500;
+		font-size: $s30px;
+		text-align: center;
+	}
+
+	.header-text {
+		font-family: 'PFDinDisplayPro';
+		font-weight: 300;
+		font-size: $s16px;
+		color: rgba(255, 255, 255, 0.45);
+		text-align: center;
+	}
+
+	.button-auth {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 21.479958890030833vh;
+		height: 4.008221993833504vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: $default-elements-offset;
+		color: #fff;
+		font-family: 'PFDinDisplayPro';
+		font-weight: 300;
+		font-size: $s16px;
+		line-height: 2.289vh;
+	}
+
+	.primary {
+		background: rgba(255, 255, 255, 0.15);
+		background-size: 300%;
+		background-position: left;
+		box-shadow: 0px 0px 45px transparent;
+		transition: background 0.4s ease-out, box-shadow 0.4s ease-out;
+
+		&:hover {
+			background: rgb(152, 1, 18);
+			box-shadow: 0 0 2.29vh rgba(201, 20, 42, 0.51);
+			transition: all 0.2s ease-out;
+		}
+	}
+
+	.reg-buttons-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin-top: 1.56vh;
+	}
+
+	.reg-text {
+		font-family: 'PFDinDisplayPro';
+		font-weight: 500;
+		font-size: 1.2149532710280373vh;
+		color: rgba(255, 255, 255, 0.45);
+		margin-right: 0.3vw;
+	}
+
+	.auth-input {
+		display: flex;
+		flex-direction: column;
+		margin-top: $default-elements-offset;
+
+		& img {
+			position: absolute;
+			width: 0.9375vw;
+			height: auto;
+			margin-top: calc(4.316546762589928vh / 2);
+			transform: translateY(-50%);
+			margin-left: $default-offset;
+			fill: $primary-center;
+			z-index: 1;
+		}
+
+		.password-show {
+			right: $default-offset;
+			z-index: 999;
+		}
+
+		.auth-input-style-password {
+			padding: 0 calc($default-offset * 2 + 0.9375vw) 0 calc($default-offset * 2 + 0.9375vw);
+		}
+
+		& input {
+			height: 4.316546762589928vh;
+			width: auto;
+			color: white;
+			font-weight: 500;
+			font-size: $s16px;
+			line-height: 1.873vh;
+			padding: 0 $default-offset 0 calc($default-offset * 2 + 0.9375vw);
+			transition: border 0.4s;
+			border: 0.10277492291880781vh solid rgba(91, 91, 91, 0.663);
+		}
+
+		& input:focus {
+			border: 0.10277492291880781vh solid rgb(152, 1, 18);
+		}
+
+		& input::placeholder {
+			color: rgba(196, 196, 196, 0.45);
+		}
+	}
+}
+
+@keyframes main__left-top {
+	0% {
+		left: -10%;
+		opacity: 0;
+	}
+	100% {
+		left: 3.2vw;
+		opacity: 1;
+	}
+}
+
+.auth-main__left {
+	position: absolute;
+	top: 50%;
+	height: auto;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	transform: translateY(-50%);
+	animation: main__left 0.8s ease-in forwards;
+}
+
+@keyframes main__left {
+	0% {
+		left: -10%;
+		opacity: 0;
+	}
+	100% {
+		left: -1vw;
+		opacity: 1;
+	}
+}
+
+.auth-main__left-row {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	margin-top: 6.162vh;
+	.auth-main__left-row-line {
+		width: 6.988694758478931vh;
+		transform: rotate(90.00deg);
+		border: 0.20554984583761562vh solid rgba(255, 255, 255, 0.5);
+	}
+}
+
+.auth-main__left-row:first-of-type {
+	margin-top: 0;
+}
+
+.auth-main__left-row-wrapper {
+	margin-left: -1.21875vw;
+    margin-top: -1.85vw;
+}
+
+.auth-main__left-row-title {
+	font-family: 'PFDinDisplayPro';
+	font-weight: 500;
+	font-size: $s18px;
+}
+
+.auth-main__left-row-text {
+	font-family: 'PFDinDisplayPro';
+	font-weight: 300;
+	font-size: $s14px;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.background-blackout-auth {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(28, 28, 28, 0.838);
+}
