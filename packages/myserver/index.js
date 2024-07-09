@@ -8,4 +8,3 @@ mp.events.add('playerQuit', (player, exitType, reason) => {
 });
 
 console.log('Server started...');
-
